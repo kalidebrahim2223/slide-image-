@@ -20,7 +20,7 @@ body{
 	height:100%;
 	object-fit: cover;
 	visibility: hidden;
-        transition: all 2s ease;
+        transition: all 1s ease;
 }
 .container img.active{
 	position: absolute;
