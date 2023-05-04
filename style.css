@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	position: relative;
+	width: 400px;
+	height:400px;
+	border:1px solid red;
+	
+}
+.container img{
+	width:100%;
+	height:100%;
+	object-fit: cover;
+	visibility: hidden;
+    transition: all 2s ease;
+}
+.container img.active{
+	position: absolute;
+	visibility: visible;
+	top:0;
+	left:0;
+}
+.container img.prev{
+	position: absolute;
+	visibility: visible;
+	opacity: 1;
+	left:-420px;
+	top:0;
+}
+.container img.next{
+	position: absolute;
+	visibility: visible;
+	opacity: 1;
+	left:420px;
+	top:0;
+}
+.container button{
+	position: absolute;
+	bottom: 50px;
+	left:50%;
+}
+
+
+
